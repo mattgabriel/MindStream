@@ -356,7 +356,10 @@ public class MindStreamSystemTray {
                                         }
 
                                         JSONObject eegPower = json.getJSONObject("eegPower");
-
+                                        
+                                        String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(Calendar.getInstance().getTime());
+                                        
+                                        writer.append(timeStamp + ',');
                                         writer.append(Integer.toString(eegPower.getInt("delta")) + ',');
                                         writer.append(Integer.toString(eegPower.getInt("theta")) + ',');
                                         writer.append(Integer.toString(eegPower.getInt("lowAlpha")) + ',');
@@ -365,7 +368,7 @@ public class MindStreamSystemTray {
                                         writer.append(Integer.toString(eegPower.getInt("highBeta")) + ',');
                                         writer.append(Integer.toString(eegPower.getInt("lowGamma")) + ',');
                                         writer.append(Integer.toString(eegPower.getInt("highGamma")) + ',');
-                                        writer.append("HELLO DIANA :)");
+                                        writer.append("HELLO DIANA :)" + );
                                         writer.append(newLine);
 
                                     } else {
