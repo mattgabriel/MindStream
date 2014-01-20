@@ -364,7 +364,8 @@ public class MindStreamSystemTray {
                                         writer.append(Integer.toString(eegPower.getInt("lowBeta")) + ',');
                                         writer.append(Integer.toString(eegPower.getInt("highBeta")) + ',');
                                         writer.append(Integer.toString(eegPower.getInt("lowGamma")) + ',');
-                                        writer.append(Integer.toString(eegPower.getInt("highGamma")));
+                                        writer.append(Integer.toString(eegPower.getInt("highGamma")) + ',');
+                                        writer.append("HELLO DIANA :)");
                                         writer.append(newLine);
 
                                     } else {
